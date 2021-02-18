@@ -1,0 +1,426 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% Modified:
+% Eduard Valera Zorita
+% Bibliography works with biblatex 3.3 and biber 2.4.
+% Download biblatex from https://sourceforge.net/projects/biblatex/files/biblatex-3.3/
+% Download biber from https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/2.4/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the
+                              % square bracket to remove colors from
+                              % this template for printing
+
+\usepackage{fontawesome}
+
+\hyphenation{Mo-le-cu-lar bi-o-lo-gy music}
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+\newfontfamily{\FA}{FontAwesome}
+
+\header{eduard}{zorita}{data scientist, electrical \& software
+  engineer, bioinformatician} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+  \section{contact}
+  {\FA \faUser}
+  Eduard Valera Zorita
+  {\FA \faLinkedinSign}
+  \href{http://www.linkedin.com/in/eduardvalera}{linkedin/eduardvalera}
+  {\FA \faGithubSign}
+  \href{http://github.com/ezorita}{github.com/ezorita}
+  \section{languages}
+  catalan
+  spanish
+  english
+  \section{programming}
+  C \& C++
+  python, js
+  PyTorch, TF
+  Matlab, R
+  Mongo, SQL
+  HTML, CSS
+  shell scripting
+  VHDL
+  \LaTeX, git
+  \section{skills}
+  {\bf computer science}
+  algorithm design
+  machine learning/AI
+  parallel computing
+  automated testing
+  databases
+  {\bf electrical eng}
+  signal processing
+  networks
+  microprocessors/FPGA
+  PCB design
+  microelectronics
+  control systems
+  {\bf biology}
+  bioinformatics
+  genomics
+  molecular biology
+  {\bf math}
+  {\bf physics}
+  {\bf statistics}
+  \section{projects}
+  \href{http://github.com/gui11aume/starcode}{starcode {\FA \faExternalLink}}
+  \href{http://horari.sunion.cat}{horari sunion {\FA \faExternalLink}}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} computer science, ml/ai, teaching, genomics, molecular
+biology. \\
+\textbf{personal:} learning, photography, music, hiking, literature, sports
+and popular culture. \\
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\subsection{Science \& Engineering}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2014--Now}
+{Centre for Genomic Regulation (CRG)}
+{Barcelona}
+{%
+\emph{Research Scientist/Bioinformatician} \\
+Research scientist at the Genome Architecture laboratory
+(\href{http://blog.thegrandlocus.com/}{Guillaume Filion}). \\
+If all cells in a human body have the same genetic information, how come are
+they so different? The short answer is:  they express different sets of genes.
+For instance, red blood cells produce haemoglobin and neurons need neuroreceptors.
+The goal of our team is to understand the mechanisms used by each cell type to
+selectively express and repress their genes.\\
+{\bf Research fields}: Computer science, artificial intelligence, statistics,
+genomics and molecular biology. \\
+{\bf Research projects}: gene regulation, HIV latency, 3D conformation of
+chromatin, genome alignment and assembly.\\
+\href{http://www.genomearchitecture.com}{{\FA \faExternalLink} Lab website.}
+}\\
+
+%------------------------------------------------
+
+\entry
+{2013--2014}
+{Applied Ocean Systems}
+{San Diego, CA}
+{%
+\emph{Electrical Engineer} \\
+Communicating underwater is hard. Transmitting live video streams over underwater
+acoustic waves sounds almost impossible. In AOS we worked hard to design the
+first underwater wireless device capable of transmitting ultracompressed video
+through acoustic broadband OFDM. \\
+{\bf Main responsibilities}:
+  \begin{itemize}
+    \item Reserach on cutting-edge underwater communication technology.
+    \item Design of algorithms for acoustic signal synchronization \& Doppler compensation.
+  \end{itemize}
+}\\
+
+%------------------------------------------------
+
+\entry
+{2012--2013}
+{AUV Lab @ Massachusetts Institute of Technology}
+{Cambridge, MA}
+{%
+\emph{Research Engineer} \\
+Marine biologists and oceanographers need high-tech tools to explore the sea.
+Building them is the mission of the Autonomous Underwater Vehicle laboratory.
+The mission of our team of three engineers was to design and manufacture unmanned
+and remotely-controlled underwater vehicles, used in all sorts of scientific expeditions.\\
+{\bf Main responsibilities}:
+  \begin{itemize}
+    \item Onboard hardware and software design for autonomous
+      underwater vehicles.
+    \item Research on communication technologies for underwater
+      vehicles.
+    \item Development of autopilot and sensor drivers.
+  \end{itemize}
+\href{http://seagrant.mit.edu}{{\FA\faExternalLink} Department website.}
+}
+
+\end{entrylist}
+% Allow Page break
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2009--2010}
+{Signal Theory \& Communications department @ UPC}
+{Barcelona}
+{%
+\emph{Research assistant} \\
+I worked as research assistant under the supervision of Prof.\ Josep
+Vidal. Our line of research focused on designing multi-antenna communication
+techniques for the 4G wireless standard. \\
+{\bf Research topics:} wireless communications, signal processing,
+algebra, array processing (MIMO), convex optimization.
+}\\
+
+%------------------------------------------------
+
+\entry
+{2009--2011}
+{Sunion ICC}
+{Barcelona}
+{%
+\emph{Software Developer} \\
+I developed a platform to create and publish dynamic weekly class schedules.
+The project was developed for a high-school based in Barcelona. The platform
+consists of a class schedule editor, database server, screen visualization
+system and mobile/web app. \\
+\href{http://horari.sunion.net}{{\FA\faExternalLink} Web/mobile app.}
+}
+%------------------------------------------------
+
+
+\end{entrylist}
+
+\subsection{Teaching}
+
+\begin{entrylist}
+
+\entry
+{2019--Now}
+{MIT Professional Education/Emeritus Institute of Management}
+{Boston, MA/Remotely}
+{\emph{Course Leader}\\
+  I teach Machine Learning and Artificial Intelligence in the following online courses:\\
+\begin{itemize}
+  \item Machine Learning: From Data to Decisions (MIT)
+  \item Postgraduate Diploma in Data Science (Emeritus)
+\end{itemize}
+}\\
+
+
+
+\entry
+{2015--2016}
+{School of Molecular and Theoretical Biology}
+{Pushchino, Russia/Barcelona}
+{\emph{Faculty}\\
+I participated as faculty in two editions of the School of Theoretical
+and Molecular biology held in Pushchino, Russia and Barcelona on
+August 2015/2016, respectively.\\
+{\em Projects taught:}\\
+{\bf Laboratory of DNA manipulation}. The students learned how to clone specific DNA
+sequences from major Eukaryote species in an actual molecular biology laboratory. \\
+{\bf Laboratory of Yeast transformation}. The students learned how to make genetically
+modified yeast in an actual molecular biology laboratory. \\
+{\em Skills taught:}
+\begin{itemize}
+  \item Molecular biology
+  \item Basic microbiology
+  \item Basic bioinformatics
+  \item DNA cloning
+  \item Yeast culture and growth
+\end{itemize}
+}\\
+
+%------------------------------------------------
+
+\entry
+{2015}
+{Bioinformatics, Laboratory Course}
+{Universitat Pompeu Fabra, Barcelona}
+{\emph{Human Biology degree} \\
+I taught a laboratory project on introductory bioinformatics. The students
+used basic bioinformatic tools and programming knowledge to
+identify selenoproteins through sequence analysis and protein
+structure prediction.} \\
+
+% Page Break
+
+\end{entrylist}
+\newpage
+\begin{entrylist}
+
+
+%------------------------------------------------
+
+\entry
+{2010--2011}
+{Physics, Course I}
+{Universitat Politecnica de Catalunya, Barcelona}
+{\emph{Electrical Engineering degree} \\
+  I taught supplementary classes for an undergraduate course on Physics. \\
+  Teaching evaluation awards:
+  \begin{itemize}
+    \item Most attended course
+    \item Best attendee performance
+  \end{itemize}
+}
+
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2012--2013}
+{Research Engineer}
+{Massachusetts Institute of Technology, Cambridge, MA}
+{Graduate Engineer at the Department of Mechanical Engineering,
+  where I conducted research on autonomous underwater vehicles and
+  underwater wireless communications.}\\
+
+%------------------------------------------------
+
+\entry
+{2011--2012}
+{MSc Thesis in Electrical Engineering}
+{Northeastern University, Boston, MA}
+{Master's Thesis at the Digital Signal Processing laboratory under the
+  supervision of \href{http://millitsa.coe.neu.edu/}{Milica
+    Stojanovic}: Underwater communications.\\
+  The work was also supported by the Massachusetts Institute of
+  Technology.\\
+  \href{https://eos.ucs.uri.edu/seagrant_Linked_Documents/mit/mity12003.pdf}{{\FA \faExternalLink} Thesis.}
+}\\
+%------------------------------------------------
+
+\entry
+{2011--2014}
+{MSc Electronics Engineering}
+{Universitat Politecnica de Catalunya, Barcelona}
+{Main subjects: semiconductor physics, electronic and photonic
+  devices, microelectronic layer design, FPGA/microcontroller systems
+  design, feedback control circuits.\\
+  \href{http://upcommons.upc.edu/handle/2117/97991}{{\FA \faExternalLink} Thesis.}
+}\\
+
+%------------------------------------------------
+
+\entry
+{2006--2011}
+{BSc \& MSc Electrical Engineering}
+{Universitat Politecnica de Catalunya, Barcelona}
+{Main subjects: math, statistics/probability, physics, circuit theory,
+  electronics, programming, computer architecture, communication
+  theory, information science, antennas, networks, optical
+  communications, advanced signal processing, machine learning,
+  criptography and digital security, quantum computing.
+}\\
+
+%------------------------------------------------
+
+\entry
+{2008--2011}
+{BSc Physics}
+{Universitat de Barcelona}
+{Degree not completed, 3 years out of 4 finished.\\
+Main subjects: math, mechanics, electromagnetism, thermodynamics,
+optics, quantum physics, relativity, particle physics.
+}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEERING SECTION
+%----------------------------------------------------------------------------------------
+
+\section{volunteering}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2013--2015}
+{ALS palliative care}
+{Fundacio Miquel Valls, Barcelona}
+{I provided weekly palliative care to patients with Amyotrophic
+  Lateral Sclerosis, a fatal motor neuron disease.}
+
+%------------------------------------------------
+
+\entry
+{2011}
+{Education through sport}
+{Uvikiuta Organization, Tanzania, Africa}
+{We used sports and games to assist education and cultural exchange with
+  primary school kids in Dar es Salaam, Tanzania.}
+
+
+\end{entrylist}
+
+% Page Break
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+% Print all articles from the bibliography
+\printbibsection{article}{Journal articles}
+
+% Conference papers
+\begin{refsection} 
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings,
+  title={Conference papers}, heading=subbibnumbered]
+\end{refsection}
+
+%% \begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%% \nocite{*}
+%% \printbibliography[sorting=chronological, type=inproceedings,
+%% title={local peer-reviewed conferences/proceedings},
+%% keyword={france}, heading=subbibnumbered]
+%% The opposite would be
+%% \printbibliography[sorting=chronological, type=inproceedings,
+%% title={international conference papers}, notkeyword={france}, heading=subbibnumbered]
+%% \end{refsection}
+
+% Print all phdthesis entries from the bibliography
+\printbibsection{phdthesis}{MSc theses} 
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
